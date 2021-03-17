@@ -1,31 +1,29 @@
-<!DOCTYPE HTML>
 <html lang="en">
 <html>
     <head> 
-        <meta charset = "utf-8"/> 
         <title>Form</title>
         <link rel="stylesheet" type="text/css" href="form.css"> 
      </head>
      <body>
+
+            <div>
+                <h1>Please Enter your Details</h1>
+                <h2>Fill the application form below and submit.</h2>
+            </div>
+            <div>
+               <form method="POST" action="form.html">
+                       <div>
+                       Name<input type="text" name="first_name" placeholder="First"  required>
+                       <input type="text" name="second_name" placeholder="Last">
+                       <br>
+                       </div>
+                       <br>
+                       <div>
+                           Email <input type="email" name="email"  placeholder="john@gmail.com" required>
+                           <input type="submit" id ="button1">
+                       </div>
+               </form>
+            </div>
          
-         <div>
-             <h1>Please Enter your Details</h1>
-             <h2>Fill the application form below and submit.</h2>
-         </div>
-         <div>
-            <form>
-                    <div>
-                        <label for="fname"><h3>Name*</h3></label>
-                    <input type="text" id="first" name="fname1"  placeholder="First" pattern="regexp" required/>
-                    <input type="text" id="last" name="fname2" placeholder="Last">
-                    <input type="button" id ="button1">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="gname"><h3>Email Address</h3></label>
-                        <input type="text" id="email" name="gname1"  placeholder="john@gmail.com" required/>
-                    </div>
-            </form>
-         </div>
      </body> 
 </html>
